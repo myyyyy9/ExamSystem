@@ -1,0 +1,32 @@
+
+
+
+.user_bg{
+    width: 100%;
+    height: 45vh;
+    filter: blur(10rpx);
+}
+.user_img_wrap{
+    position: relative;
+}
+.user_info{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top:40%;
+    color: honeydew;
+    text-align: center;
+    font-size: 50rpx;
+}
+.user_icon{
+    width: 150rpx;
+    height: 150rpx;
+    border-radius: 50%;
+
+}
+.wrap>view{
+    margin-top: 30rpx;
+    background-color: rgba(202, 182, 182, 0.932);
+    padding: 20rpx;
+
+}

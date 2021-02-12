@@ -1,0 +1,52 @@
+<block wx:for="{{multipleSelect}}" wx:key="*this">
+    
+
+<view class="multipleSelect_box">
+    <view class="head_box">
+        
+        <view class="head_boxItem">
+        1.多选
+        </view>
+        <view class="head_boxItem">
+        <input  name="multipleScore" type="text" placeholder="分值：4"></input>
+        </view>
+        <view class="head_boxItem">
+        <image class="deleteIcon" src="/asserts/images/deleteAll.png" mode="aspectFit" bind:tap="_handleDeleteMultiple"></image>
+          
+        </view>
+    </view>
+    <view class="title_box">
+        <textarea name="multipleTitle" class="textarea" placeholder="多选题">
+            
+        </textarea>
+          
+    </view>
+     <view class="option_box" wx:for="{{option}}" wx:key="index">
+        <view class="option_boxItem">
+        <checkbox-group name="multipleOption{{index}}" bindchange="_handleCheckboxChange">
+            <checkbox value="{{item.index}}">
+                
+            </checkbox>
+        </checkbox-group>
+         
+        </view>
+        <view class="content option_boxItem">
+            <input name="multipleContent{{index}}" type="<text>" placeholder="{{item.option}}"></input>
+        </view>
+        <view class="option_boxItem">
+            <image class="deleteIcon" src="/asserts/images/delete.png" mode="aspectFit"></image>
+              
+        </view>
+       
+    </view>
+  
+        
+
+ 
+  
+
+
+    
+</view> 
+</block>
+

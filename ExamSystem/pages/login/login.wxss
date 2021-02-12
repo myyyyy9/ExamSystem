@@ -1,0 +1,46 @@
+.bgimg{
+    width: 100vw;
+    height: 460rpx;
+}
+
+.loginPane{
+    width: 500rpx;
+    height: 400rpx;
+    /* background-color: green; */
+    margin: 20rpx auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.loginPane .formItem{
+    flex: 1;
+    display: flex;
+    /* background-color: hotpink; */
+    /* border-bottom: 1px solid red; */
+    margin: 20rpx 0;
+}
+.accountIcon{
+    height: 25px;
+    width: 25px;
+}
+
+.password,
+.account{
+    border-bottom: 1px solid tomato;
+    color: tomato;
+    margin-left: 20rpx;
+    flex: 1;
+}
+.identity{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+
+
+.registerBtn,
+.loginBtn{
+    width: 100%;
+    border-radius: 40rpx;
+}

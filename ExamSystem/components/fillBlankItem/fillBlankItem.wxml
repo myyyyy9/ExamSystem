@@ -1,0 +1,32 @@
+<block wx:for="{{fillBlank}}"wx:key="index">
+    
+
+<view class="fillBlank_box">
+    <view class="head_box">
+        
+        <view class="head_boxItem">
+        1.填空
+        </view>
+        <view class="head_boxItem">
+        <input name="fillBlankScore" type="text" placeholder="分值：4"></input>
+        </view>
+        <view class="head_boxItem">
+        <image class="deleteIcon" src="/asserts/images/deleteAll.png" mode="aspectFit" bind:tap="_handleDeleteBlank"></image>
+          
+        </view>
+    </view>
+    <view class="title_box">
+        <textarea name="fillBlankTitle" class="textarea" placeholder="填写题目">
+            
+        </textarea>
+          
+    </view>
+      <view class="title_box">
+        <textarea  name="fillBlankAnswer" class="textarea" placeholder="填写答案">
+            
+        </textarea>
+          
+    </view>
+</view>
+   </block>    
+   

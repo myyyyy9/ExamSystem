@@ -1,0 +1,46 @@
+<!-- 背景图片 -->
+<image class="bgimg" src="/asserts/images/bgimg.png" mode="aspectFill">
+    
+</image>
+<!-- 登录表单 -->
+
+<view class="loginPane">
+    <form  bindsubmit="_handleSubmit">
+    <!-- 账号 -->
+    <view class="formItem">
+        <image class="accountIcon" src="/asserts/images/account.png" mode="aspectFit"/>
+            <input name="account" class="account"  type="text" placeholder="请输入账号" bindinput="_handleInputAccount" > </input>  
+            <icon class="" type="{{isGood?'success':'warn'}}" >
+            </icon>
+              </view>
+    <!-- 密码 -->
+    <view class="formItem">
+        <image class="accountIcon" src="/asserts/images/pwd.png" mode="aspectFit"/>
+            <input name="pwd" class="password" type="test" password="{{!isShowPwd}}" placeholder="请输入密码" bindinput="_handleInputPwd"> </input>
+            <image class="accountIcon" src="{{pwdImg}}" mode="aspectFit" bind:tap="_handlePwdShow"></image>
+    </view>
+    <!-- checkbox -->
+    <view>
+       
+       <radio-group name="identity" class="identity">
+            <radio  value="student" checked="{{true}}">
+                我是学生
+            </radio>
+            <radio  value="teacher">
+                我是老师
+            </radio>
+       </radio-group>
+         
+         
+        
+    </view>
+    <!-- 登录按钮 -->
+    <view class="formItem">
+        <button class="longinBtn" type="primary" form-type="submit" disabled="{{!canLogin}}" bindgetuserinfo="_handleGetUserInfo" open-type="getUserInfo">登 录</button>
+    </view>
+    <!-- 注册按钮 -->
+    <view class="formItem">
+        <button class="registerBtn" bind:tap="_handleRegister">注 册</button>
+    </view>
+    </form>
+</view>

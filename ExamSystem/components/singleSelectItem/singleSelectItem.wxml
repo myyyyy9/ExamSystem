@@ -1,0 +1,49 @@
+<block wx:for="{{singleSelect}}" wx:key="*this">
+    <view class="singleSelect_box">
+    <view class="head_box">
+        
+        <view class="head_boxItem">
+        1.单选
+        </view>
+        <view class="head_boxItem">
+        <input name="singleScore" type="text" placeholder="分值：4"></input>
+        </view>
+        <view class="head_boxItem">
+        <image class="deleteIcon" src="/asserts/images/deleteAll.png" mode="aspectFit" bind:tap="_handleDeleteSingle"></image>
+          
+        </view>
+    </view>
+    <view class="title_box">
+        <textarea name="singleTitle" class="textarea" placeholder="单选题">
+            
+        </textarea>
+          
+    </view>
+  <view class="option_box" wx:for="{{option}}" wx:key="index">
+        <view class="option_boxItem">
+       
+          <radio-group name="option{{index}}" bindchange="_handleRadioChange">
+               <radio  value="{{item.index}}" />
+          </radio-group>
+            
+           
+        </view>
+        <view class="content option_boxItem">
+            <input name="optionContent{{index}}" type="<text>" placeholder="{{item.option}}"></input>
+        </view>
+        <view class="option_boxItem">
+            <image class="deleteIcon" src="/asserts/images/delete.png" mode="aspectFit"></image>
+              
+        </view>
+       
+   </view>
+    </view>
+  
+</block>
+
+  
+        
+
+ 
+  
+

@@ -1,0 +1,22 @@
+.title,
+.content,
+.new_exam{
+    border-bottom: 1px solid gray;
+    padding: 20rpx;
+ 
+}
+.new_exam{
+    font-size: 35rpx;
+    font-weight: bold    ;
+}
+.box_exam{
+    margin: 20rpx auto;
+    width: 85%;
+    border:1px solid  gray;
+    border-radius: 3%;
+    padding: 20rpx;
+}
+.box_paper{
+    height: 100rpx;
+    margin: 50rpx;
+}

@@ -1,0 +1,35 @@
+<view  class="registerPane">
+   <form bindsubmit="_handleSubmit">
+       <!-- 账号 -->
+    <view class="formItem">
+        <image class="accountIcon" src="/asserts/images/account.png" mode="aspectFit"></image>
+        <input name="account" class="account" type="text" placeholder="请输入账号" bindinput="_handleInputAccount"></input>
+        <icon class="" type="{{isGood?'success':'warn'}}" ></icon>
+          
+          
+    </view>
+    <!-- 密码 -->
+    <view class="formItem">
+        <image class="accountIcon" src="/asserts/images/pwd.png" mode="aspectFit"></image>
+        <input name="pwd" class="password" type="text" password="{{!isShowPwd}}" placeholder="请输入密码"bindinput="_handleInputPwd"></input>
+        <image class="accountIcon" src="{{pwdImg}}" mode="aspectFit" bind:tap="_handlePwdShow"></image>
+          
+    </view>
+    <view class="formItem">
+        <image class="accountIcon" src="/asserts/images/pwd.png" mode="aspectFit"></image>
+        <input name="correctPwd" class="password" type="text" password="{{!isShowPwd}}" placeholder="确认密码"bindinput="_handleInputCorrectPwd"></input>
+       <icon class="" type="{{isPwd?'success':'warn'}}" ></icon>
+          
+    </view>
+        <!-- 电话 -->
+    <view class="formItem ">
+        <image class="accountIcon " src="/asserts/images/phone.png" mode="aspectFit"></image>
+        <input name="phoneNumeber" class="account" type="text" placeholder="请输入电话" bindinput="_handleInputPhone"></input>
+        <icon class="" type="{{isPhone?'success':'warn'}}" ></icon>
+    </view>
+    <!-- 注册按钮 -->
+    <view class="formItem">
+        <button class="registerBtn" type="primary" form-type="submit"disabled="{{!canRegister}}">注 册</button>
+    </view>
+   </form>
+</view>

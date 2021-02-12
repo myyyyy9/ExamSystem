@@ -1,0 +1,72 @@
+<form bindsubmit="_handleSubmitPaper">
+<view class="box_exam">
+    <view class="new_exam">
+    新建考试
+    </view>
+    <view class="title">
+    <input name="exam_title" type="text" placeholder="填写考试标题（必填）"></input>
+    </view>
+    <view class="content">
+    <textarea name="exam_recmd" placeholder="填写考试详细说明（可选）" >
+        
+    </textarea>
+    </view>
+    <view>
+    上传文件
+    </view>
+
+</view>
+<view class="box_newPaper">
+   <block wx:for="{{singleSelect}}" wx:key="*this">
+       <singleSelectItem id="{{index}}"  />
+   </block>
+<block wx:for="{{multipleSelect}}" wx:key="*this">
+      <multipleSelectItem/>
+   </block>
+<block wx:for="{{fillBlank}}" wx:key="*this">
+      <fillBlankItem/>
+   </block>
+
+
+
+</view>
+
+
+<view class="box_paper">
+   
+    <button bind:tap="_handleBtn">+ 添加题目</button>
+    <!-- 上拉菜单actionsheet -->
+    <action-sheet  bindchange="_actionSheetChange" hidden="{{isShowActionSheet}}">
+        <block wx:for="{{groups}}" wx:key="id"> 
+         <action-sheet-item bindtap="itemTap" data-name="id" data-id="{{item.id}}">{{item.name}}</action-sheet-item>
+       </block>
+
+       <action-sheet-cancel >取消</action-sheet-cancel>
+
+</action-sheet>
+</view>
+
+
+
+
+<view class="box_subject">
+    <view>
+       单选题 
+    </view>
+    <view>
+       多选题 
+    </view>
+    <view>
+       填空题
+    </view>
+    <view>
+       主观题
+    </view>
+    <view>
+       判断题 
+    </view>
+</view>
+<view>
+    <button type="primary" form-type="submit">确认发布</button>
+</view>
+</form>

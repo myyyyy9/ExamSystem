@@ -1,0 +1,26 @@
+<view class="user_info_wrap" >
+    <view class="user_img_wrap" >
+        <image class="user_bg" src="{{userinfo.avatarUrl}}" mode="aspectFit" ></image>
+          <view class="user_info">
+              <image class="user_icon" src="{{userinfo.avatarUrl}}" mode="aspectFit"  ></image>
+                <view class="user_name" >
+                    {{userinfo.nickName}}
+                </view>
+          </view>
+    </view>
+</view> 
+
+<view class="wrap">
+    <view>
+    我的资料
+    </view> 
+    <view>
+    学生成绩
+    </view> 
+    <view>
+    学生信息
+    </view> 
+<view>
+    修改密码
+</view> 
+</view>

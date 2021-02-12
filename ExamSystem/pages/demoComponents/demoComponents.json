@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "singleSelectItem":"/components/singleSelectItem/singleSelectItem",
+    "multipleSelectItem":"/components/multipleSelectItem/multipleSelectItem",
+    "fillBlankItem":"/components/fillBlankItem/fillBlankItem"
+  },
+  "navigationBarTitleText": "自定义组件"
+}

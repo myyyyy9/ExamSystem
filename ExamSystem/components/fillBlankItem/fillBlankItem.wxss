@@ -1,0 +1,31 @@
+.fillBlank_box{
+    margin: 20rpx auto;
+    width: 85%;
+    border: 1px solid gray;
+    border-radius: 2%;
+}
+.head_box{
+    display: flex;
+    margin: 20rpx;
+}
+.head_boxItem{
+    flex: 1;
+}
+.deleteIcon{
+    height: 52rpx;
+    width: 52rpx;
+    margin-left:80%;
+}
+.title_box{
+    height: 150rpx;
+    margin: 20rpx;
+    background-color: rgba(240, 236, 236, 0.589);
+    border-radius: 5%;
+    
+}
+
+
+
+.textarea {
+    height: 100%;
+}
